@@ -1,6 +1,18 @@
 # libdio: easily building self-organized overlays
 
-libdio is a library used to coordinate the construction of distributed overlays on SPLAY. This work is developed as a part of DIONASYS project. 
+Traditional mathods of building overlays topologies require the nodes to navigate in an existing structure in order to find their exact position in the topology. Explicitly creating and maintaining these structures in dynamic environments is clearly a complex and error-prone task. An alternative to the traditional approach is to profit from the self-organizing properties of gossip-based protocols to build these topologies. In this work, we are interested in the practical aspects of constructing overlay topologies, which includes making it easy to  construct, maintain, compose and adapt (on-the-fly) such structures. 
+
+To this end, we present ***libdio***. 
+
+*libdio* is a library used to coordinate the construction of distributed overlay topologies. *lidbio* presents a very simple API based on node affinity declarations, that is used to automatically emerge and maintain the requested overlay structure.
+
+The rationale behind *libdio* is the idea of keeping apart the declaration of the structure and the process that builds it. Our main objective is to ease the process of creating, deploying, monitoring, composing and adapting these overlays. *libdio* offers support in four axes: i) **programmability** by making it easy to program overlays, ii) **runtime support** by handling all the low-level details required to build and deploy overlays, iii) **overlay composition**: by offering a simple mechanism that allows the programmer to attach and detach different protocols as a stack of overlays, iv) **overlay adaptation**: by offering mechanisms that allow the programmer to adapt the protocols and topologies at runtime   
+
+libdio was built upon SPLAY framework and this work started being developed as a part of DIONASYS project. 
+
+
+
+
 
 
 # The API:
