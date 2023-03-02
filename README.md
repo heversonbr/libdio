@@ -232,7 +232,7 @@ events.loop()
 
 # Experiments
 
-![Check this experiment output here](experiments/ring_convergence/plots/function_adaptation_cw_to_ccw_nochurn_job_339.pdf)
+![Check the experiment outputs](experiments/ring_convergence/plots/function_adaptation_cw_to_ccw_nochurn_job_339.pdf)
 
 # Versions:
 v 0.1
