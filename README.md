@@ -230,9 +230,16 @@ events.loop()
 
 ```
 
-# Experiments
+# Some Experiments outputs
 
-![Check the experiment outputs](experiments/ring_convergence/plots/function_adaptation_cw_to_ccw_nochurn_job_339.pdf)
+Changing the p2p topology online. This experiment shows how we can adapt the p2p topolofy online and on demand. 
+In this example, we change a simple Chord ring from a **Clockwise Ring** to a **Counter Clockwise Ring**. 
+The **function replaced** point shows the moment when we start the dissemination of a new ruling function that will change the network topology.
+The blue line shows the dissemination of the new function and the green line shows the network converging to its new topology.
+
+
+![Alt Text](experiments/ring_convergence/plots/function_adaptation_cw_to_ccw_nochurn_job_339.png)
+
 
 # Versions:
 v 0.1
